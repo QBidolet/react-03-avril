@@ -10,6 +10,10 @@ import ExempleJSX from './components/4-communication-inter-composant/ExempleJSX'
 import ControlledForm from './components/4-communication-inter-composant/ControlledForm';
 import UncontrolledForm from './components/4-communication-inter-composant/UncontrolledForm';
 import Todo from './components/4-communication-inter-composant/todo/Todo';
+import SwapiCharacter from './components/5-interaction-serveur/SwapiCharacter';
+import ClassCounter from './components/6-hooks/ClassCounter';
+import FonctionCounter from './components/6-hooks/FunctionCounter';
+import Users from './components/6-hooks/tp-users/Users';
 
 
 function App() {
@@ -23,7 +27,13 @@ function App() {
     // <ExempleJSX></ExempleJSX>
     // <ControlledForm></ControlledForm>
     // <UncontrolledForm></UncontrolledForm>
-    <Todo></Todo>
+    // <Todo></Todo>
+    // <SwapiCharacter/>
+    // <div>
+    // <ClassCounter></ClassCounter>
+    // <FonctionCounter></FonctionCounter>
+    // </div>
+    <Users></Users>
     );
 }
 
