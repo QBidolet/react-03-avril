@@ -18,6 +18,7 @@ import Users from './components/6-hooks/tp-users/Users';
 import DemoUseEffect from './components/6-hooks/DemoUseEffect';
 import ThemeContext from './components/8-context/ThemeContext';
 import ThemeSwitcher from './components/8-context/ThemeSwitcher';
+import ComposantParent from './components/11-quelques-patterns/lifting-state-up/ComposantParent';
 
 
 function App() {
@@ -41,9 +42,10 @@ function App() {
     // </div>
     // <DemoUseEffect></DemoUseEffect>
     // <Users></Users>
-    <ThemeContext.Provider value={{theme, setTheme}}>
-      <ThemeSwitcher></ThemeSwitcher>
-    </ThemeContext.Provider>
+    // <ThemeContext.Provider value={{theme, setTheme}}>
+    //   <ThemeSwitcher></ThemeSwitcher>
+    // </ThemeContext.Provider>
+    <ComposantParent></ComposantParent>
     );
 }
 
