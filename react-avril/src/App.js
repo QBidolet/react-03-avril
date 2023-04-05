@@ -20,6 +20,8 @@ import ThemeContext from './components/8-context/ThemeContext';
 import ThemeSwitcher from './components/8-context/ThemeSwitcher';
 import ComposantParent from './components/11-quelques-patterns/lifting-state-up/ComposantParent';
 import Liste from './components/11-quelques-patterns/high-order-component/Liste';
+import FilmList from './components/tp-films/FilmList';
+import { FilmProvider } from './components/tp-films/FilmContext';
 
 function App() {
   const [theme, setTheme] = React.useState('light');
@@ -46,7 +48,10 @@ function App() {
     //   <ThemeSwitcher></ThemeSwitcher>
     // </ThemeContext.Provider>
     // <ComposantParent></ComposantParent>
-    <Liste></Liste>
+    // <Liste></Liste>
+    <FilmProvider>
+      <FilmList></FilmList>
+    </FilmProvider>
     );
 }
 
