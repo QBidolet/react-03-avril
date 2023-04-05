@@ -20,9 +20,9 @@ function Users(){
             onSelectUser={setSelectedUser}></UserList>
             {selectedUser &&
             <>
-                <UserDetails></UserDetails>
-                <UserPosts></UserPosts>
-                <NewPostForm></NewPostForm>
+                <UserDetails user={selectedUser}></UserDetails>
+                <UserPosts userId={selectedUser.id}></UserPosts>
+                <NewPostForm userId={selectedUser.id}></NewPostForm>
             </>
             }
         </div>

@@ -14,6 +14,7 @@ import SwapiCharacter from './components/5-interaction-serveur/SwapiCharacter';
 import ClassCounter from './components/6-hooks/ClassCounter';
 import FonctionCounter from './components/6-hooks/FunctionCounter';
 import Users from './components/6-hooks/tp-users/Users';
+import DemoUseEffect from './components/6-hooks/DemoUseEffect';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
     // <FonctionCounter></FonctionCounter>
     // </div>
     <Users></Users>
+    // <DemoUseEffect></DemoUseEffect>
     );
 }
 
