@@ -22,6 +22,7 @@ import ComposantParent from './components/11-quelques-patterns/lifting-state-up/
 import Liste from './components/11-quelques-patterns/high-order-component/Liste';
 import FilmList from './components/tp-films/FilmList';
 import { FilmProvider } from './components/tp-films/FilmContext';
+import Counter from './components/12-redux/Counter';
 
 function App() {
   const [theme, setTheme] = React.useState('light');
@@ -49,9 +50,10 @@ function App() {
     // </ThemeContext.Provider>
     // <ComposantParent></ComposantParent>
     // <Liste></Liste>
-    <FilmProvider>
-      <FilmList></FilmList>
-    </FilmProvider>
+    // <FilmProvider>
+    //   <FilmList></FilmList>
+    // </FilmProvider>
+    <Counter></Counter>
     );
 }
 
