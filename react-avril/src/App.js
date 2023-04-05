@@ -23,6 +23,7 @@ import Liste from './components/11-quelques-patterns/high-order-component/Liste'
 import FilmList from './components/tp-films/FilmList';
 import { FilmProvider } from './components/tp-films/FilmContext';
 import Counter from './components/12-redux/Counter';
+import Contacts from './components/Contacts';
 
 function App() {
   const [theme, setTheme] = React.useState('light');
@@ -53,7 +54,8 @@ function App() {
     // <FilmProvider>
     //   <FilmList></FilmList>
     // </FilmProvider>
-    <Counter></Counter>
+    // <Counter></Counter>
+    <Contacts/>
     );
 }
 
