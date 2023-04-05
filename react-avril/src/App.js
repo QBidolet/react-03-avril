@@ -19,7 +19,7 @@ import DemoUseEffect from './components/6-hooks/DemoUseEffect';
 import ThemeContext from './components/8-context/ThemeContext';
 import ThemeSwitcher from './components/8-context/ThemeSwitcher';
 import ComposantParent from './components/11-quelques-patterns/lifting-state-up/ComposantParent';
-
+import Liste from './components/11-quelques-patterns/high-order-component/Liste';
 
 function App() {
   const [theme, setTheme] = React.useState('light');
@@ -45,7 +45,8 @@ function App() {
     // <ThemeContext.Provider value={{theme, setTheme}}>
     //   <ThemeSwitcher></ThemeSwitcher>
     // </ThemeContext.Provider>
-    <ComposantParent></ComposantParent>
+    // <ComposantParent></ComposantParent>
+    <Liste></Liste>
     );
 }
 
