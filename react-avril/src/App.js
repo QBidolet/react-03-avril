@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
 import Calculatrice from './components/calculatrice/Calculatrice.js';
 // import ExempleComposant from './components/3-composants/ExempleComposant';
 // import Bienvenue from './components/3-composants/Bienvenue';
@@ -15,9 +16,13 @@ import ClassCounter from './components/6-hooks/ClassCounter';
 import FonctionCounter from './components/6-hooks/FunctionCounter';
 import Users from './components/6-hooks/tp-users/Users';
 import DemoUseEffect from './components/6-hooks/DemoUseEffect';
+import ThemeContext from './components/8-context/ThemeContext';
+import ThemeSwitcher from './components/8-context/ThemeSwitcher';
 
 
 function App() {
+  const [theme, setTheme] = React.useState('light');
+  
   return (
     // <Bienvenue/>   
     // <ExempleComposant/>
@@ -34,8 +39,11 @@ function App() {
     // <ClassCounter></ClassCounter>
     // <FonctionCounter></FonctionCounter>
     // </div>
-    <Users></Users>
     // <DemoUseEffect></DemoUseEffect>
+    // <Users></Users>
+    <ThemeContext.Provider value={{theme, setTheme}}>
+      <ThemeSwitcher></ThemeSwitcher>
+    </ThemeContext.Provider>
     );
 }
 
